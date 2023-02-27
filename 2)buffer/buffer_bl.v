@@ -4,7 +4,7 @@ module buffer_bl(y,d,enable);
   always @(*)
    
     case(enable)
-      0:y=0;
+      0:y=1'bz;
       1:y=d;
     endcase
    endmodule
