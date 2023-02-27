@@ -37,7 +37,7 @@ module mealy_101010(input  clk, input rst,input x, output z);
            else       next_state = A;
          end
       F: begin
-        if(x == 0) next_state = A;
+        if(x == 0) next_state =D;
            else       next_state = B;
          end
       default: next_state = A;
